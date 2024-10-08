@@ -33,16 +33,24 @@ class _SplashPageState extends State<SplashPage> {
           Center(
             child: Image.asset(
               "assets/images/logo.png",
-              width: 200,
-              height: 200,
+              width: 160,
+              height: 160,
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 15,
           ),
           Text(
             "WhatsApp",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+          ),
+          SizedBox(
+            height: 80,
+          ),
+          Text(
+            "The best chat app for this century",
+            style: TextStyle(
+                fontWeight: FontWeight.w400, fontSize: 16, color: Colors.green),
           ),
         ],
       ),
