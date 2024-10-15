@@ -16,11 +16,8 @@ class LoginBody extends StatefulWidget {
 
 class _LoginBodyState extends State<LoginBody> {
   TextEditingController emailController = TextEditingController();
-
   var formKey = GlobalKey<FormState>();
-
   TextEditingController passwordController = TextEditingController();
-
   bool isPasswordVisibile = false;
 
   @override

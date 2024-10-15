@@ -17,14 +17,10 @@ class SignupBody extends StatefulWidget {
   @override
   State<SignupBody> createState() => _LoginBodyState();
 }
-
 class _LoginBodyState extends State<SignupBody> {
   TextEditingController emailController = TextEditingController();
-
   var formKey = GlobalKey<FormState>();
-
   TextEditingController passwordController = TextEditingController();
-
   bool isPasswordVisibile = false;
   TextEditingController nameController = TextEditingController();
   TextEditingController phoneController = TextEditingController();
