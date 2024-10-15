@@ -1,4 +1,5 @@
- import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
+import 'package:chat_app/features/profile/presentation/view/profile_view.dart';
+import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,8 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home:
-            //ProfileView()
-            SplashPage());
+        home: ProfileView());
+    // SplashPage());
   }
 }
