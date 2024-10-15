@@ -1,4 +1,4 @@
-import 'package:chat_app/features/auth/login/presentation/view/splash_view.dart';
+ import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,11 +8,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: const SplashPage());
+        home:
+            //ProfileView()
+            SplashPage());
   }
 }

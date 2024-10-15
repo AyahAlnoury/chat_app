@@ -1,4 +1,5 @@
-import 'package:chat_app/features/auth/login/presentation/view/login_view.dart';
+import 'package:chat_app/core/constants/assets_images_constants.dart';
+import 'package:chat_app/features/auth/presentation/view/login_view.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
@@ -32,7 +33,7 @@ class _SplashPageState extends State<SplashPage> {
         children: [
           Center(
             child: Image.asset(
-              "assets/images/logo.png",
+              AssetsImages.logo,
               width: 160,
               height: 160,
             ),
