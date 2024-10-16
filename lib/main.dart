@@ -1,3 +1,4 @@
+import 'package:chat_app/features/chat/presentation/view/chat_view.dart';
 import 'package:chat_app/features/profile/presentation/view/profile_view.dart';
 import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -11,10 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: ProfileView());
+        home: ChatView());
+    // ProfileView());
     // SplashPage());
   }
 }
