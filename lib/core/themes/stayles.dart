@@ -6,10 +6,12 @@ abstract class Styles {
     fontSize: 24,
     fontWeight: FontWeight.w600,
   );
-  
+
   static TextStyle textStyle10 = TextStyle(
     color: Colors.green,
     fontSize: 10,
     fontWeight: FontWeight.w600,
   );
+
+  static TextStyle textStyleGrey = TextStyle(color: Colors.grey);
 }

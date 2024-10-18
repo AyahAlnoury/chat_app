@@ -1,5 +1,5 @@
+import 'package:chat_app/core/shared%20widgets/custom_circle_avatar.dart';
 import 'package:chat_app/core/shared%20widgets/custom_field.dart';
-import 'package:chat_app/features/profile/presentation/view/widgets/profile_image.dart';
 import 'package:chat_app/features/profile/presentation/view/widgets/save_button.dart';
 import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +22,11 @@ class ProfileBody extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            const ProfileImage(),
+            CustomCircleAvatar(
+              radius: 50,
+              Pressed: () {},
+              callProfile: true,
+            ),
             const SizedBox(
               height: 15,
             ),

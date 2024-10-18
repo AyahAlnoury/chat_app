@@ -2,11 +2,12 @@ import 'package:chat_app/core/themes/stayles.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
-class ChatAppBar extends StatelessWidget {
-  const ChatAppBar({
+class CustomAppBar extends StatelessWidget {
+  CustomAppBar({
+    required this.title,
     super.key,
   });
-
+  String title;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -15,7 +16,7 @@ class ChatAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "WhatsUp",
+            title,
             style: Styles.textStyle24,
           ),
           SizedBox(
