@@ -8,7 +8,7 @@ class EmailField extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomText(
         type: TextInputType.emailAddress,
-        label: "Enter ypur Email",
+        label: "Enter your Email",
         hint: "your email",
         prefix: Icons.email_outlined,
         controller: emailController,

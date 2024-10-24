@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget {
             title,
             style: Styles.textStyle24,
           ),
-          SizedBox(
+          const SizedBox(
             width: 120,
           ),
           IconButton(
@@ -32,15 +32,16 @@ class CustomAppBar extends StatelessWidget {
               iconSize: 30,
               itemBuilder: (context) => [
                     PopupMenuItem(
-                      child: Text("Profile"),
+                      child: const Text("Profile"),
                       onTap: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ProfileView()));
+                                builder: (context) => const ProfileView()));
                       },
                     ),
-                    PopupMenuItem(child: Text("Settings"))
+                    const PopupMenuItem(child: Text("Settings")),
+                    const PopupMenuItem(child: Text("Log out"))
                   ]),
         ],
       ),

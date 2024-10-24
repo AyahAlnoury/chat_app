@@ -29,6 +29,7 @@ class _LoginBodyState extends State<SignupBody> {
   @override
   Widget build(BuildContext context) {
     return Form(
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       key: formKey,
       child: Padding(
         padding: const EdgeInsets.all(20.0),

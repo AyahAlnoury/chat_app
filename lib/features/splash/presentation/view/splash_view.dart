@@ -17,11 +17,11 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   _navigationToLogin() async {
-    await Future.delayed(Duration(seconds: 3), () {});
+    await Future.delayed(const Duration(seconds: 3), () {});
     if (context != null) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => LoginPage()),
+        MaterialPageRoute(builder: (context) => const LoginPage()),
       );
     }
   }
@@ -30,25 +30,29 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          SizedBox(
+            height: 100,
+          ),
           Center(
             child: Image.asset(
               AssetsImages.logo,
-              width: 160,
-              height: 160,
+              width: 150,
+              height: 150,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          Text(
-            "WhatsApp",
+          const Text(
+            "WhatsUp",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
           ),
-          SizedBox(
+          const SizedBox(
             height: 80,
           ),
-          Text(
+          const Text(
             "The best chat app for this century",
             style: TextStyle(
                 fontWeight: FontWeight.w400, fontSize: 16, color: Colors.green),

@@ -25,15 +25,16 @@ class SignupButton extends StatelessWidget {
         text: 'Sign Up',
         func: () {
           if (nameController.text.isEmpty) {
-            displaytoastMssg('Name is mandatory', context);
+            showSnackBarMssg('Name is mandatory', context);
           } else if (!emailController.text.contains('@')) {
-            ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text('Email address isn\'t valid ')));
+            showSnackBarMssg('Email address isn\'t valid ', context);
           } else if (phoneController.text.isEmpty) {
-            errorTextVal = "Phone must not be empty";
+            errorTextVal = "";
+            ScaffoldMessenger.of(context).showSnackBar(
+                showSnackBarMssg('Phone must not be empty', context));
             //displaytoastMssg('Phone is mandatory', context);
           } else if (passwordController.text.isEmpty) {
-            displaytoastMssg('Password is mandatory', context);
+            showSnackBarMssg('Password is mandatory', context);
           } else {
             onSuccess();
           }
@@ -41,6 +42,10 @@ class SignupButton extends StatelessWidget {
   }
 }
 
-displaytoastMssg(String msg, BuildContext context) {
-  //Fluttertoast.showToast(msg: msg);
+showSnackBarMssg(String msg, BuildContext context) {
+  ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(
+      content: Text(msg),
+    ),
+  );
 }

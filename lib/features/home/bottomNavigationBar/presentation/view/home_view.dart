@@ -1,8 +1,8 @@
 import 'package:chat_app/core/themes/colors.dart';
+import 'package:chat_app/features/call/presentation/view/call_view.dart';
 import 'package:chat_app/features/home/chat/presentation/view/chat_view.dart';
 import 'package:chat_app/features/status/presentation/view/status_view.dart';
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -14,9 +14,9 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   int currentTab = 0;
   List<Widget> pages = [
-    ChatView(),
-    StatusView(),
-    const Scaffold(),
+    const ChatView(),
+    const StatusView(),
+    const CallView(),
   ];
   List<String> titlePAge = ["Chats", "Status", "Calls"];
 
@@ -44,25 +44,20 @@ class _HomeViewState extends State<HomeView> {
                         });
                       },
                       icon: index == 0
-                          ? Icon(
-                              Icons.chat,
+                          ? Icon(Icons.chat,
                               color: currentTab == index
-                                  ? ColorApp.PrimaryColor.withOpacity(0.5)
-                                  : ColorApp.PrimaryColor,
-                            )
+                                  ? ColorApp.PrimaryColor
+                                  : ColorApp.PrimaryColor.withOpacity(0.5))
                           : index == 1
-                              ? Icon(
-                                  Icons.tips_and_updates,
+                              ? Icon(Icons.tips_and_updates,
                                   color: currentTab == index
-                                      ? ColorApp.PrimaryColor.withOpacity(0.5)
-                                      : ColorApp.PrimaryColor,
-                                )
-                              : Icon(
-                                  Icons.call,
+                                      ? ColorApp.PrimaryColor
+                                      : ColorApp.PrimaryColor.withOpacity(0.5))
+                              : Icon(Icons.call,
                                   color: currentTab == index
-                                      ? ColorApp.PrimaryColor.withOpacity(0.5)
-                                      : ColorApp.PrimaryColor,
-                                )),
+                                      ? ColorApp.PrimaryColor
+                                      : ColorApp.PrimaryColor.withOpacity(
+                                          0.5))),
                   Text(
                     titlePAge[index],
                     style: TextStyle(
