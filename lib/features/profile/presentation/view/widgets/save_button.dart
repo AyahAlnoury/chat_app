@@ -1,7 +1,7 @@
- import 'package:chat_app/features/auth/presentation/view/widgets/login_button.dart';
+import 'package:chat_app/features/auth/presentation/view/widgets/login_button.dart';
 import 'package:chat_app/features/profile/presentation/view/widgets/custom_save_button.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 
 class SaveButton extends StatelessWidget {
   const SaveButton({

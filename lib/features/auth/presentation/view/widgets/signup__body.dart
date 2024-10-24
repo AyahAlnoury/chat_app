@@ -8,6 +8,7 @@ import 'package:chat_app/features/auth/presentation/view/widgets/password_field.
 import 'package:chat_app/features/auth/presentation/view/widgets/phone_field.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/register_row.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/signup_button.dart';
+import 'package:chat_app/features/home/presentation/view/home_view.dart';
 import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,7 @@ class SignupBody extends StatefulWidget {
   @override
   State<SignupBody> createState() => _LoginBodyState();
 }
+
 class _LoginBodyState extends State<SignupBody> {
   TextEditingController emailController = TextEditingController();
   var formKey = GlobalKey<FormState>();
@@ -83,7 +85,7 @@ class _LoginBodyState extends State<SignupBody> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => const SplashPage())));
+                          builder: ((context) => const HomeView())));
                 },
               ),
               const SizedBox(

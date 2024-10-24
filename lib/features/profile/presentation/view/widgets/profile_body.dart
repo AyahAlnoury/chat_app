@@ -23,6 +23,7 @@ class ProfileBody extends StatelessWidget {
               height: 15,
             ),
             CustomCircleAvatar(
+              top: 65,
               radius: 50,
               Pressed: () {},
               callProfile: true,

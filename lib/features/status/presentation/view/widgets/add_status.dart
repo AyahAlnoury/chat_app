@@ -12,6 +12,7 @@ class AddStatus extends StatelessWidget {
           // padding: const EdgeInsets.all(10),
           child: Row(children: [
         CustomCircleAvatar(
+          top: 35,
           radius: 28,
           Pressed: () {},
           callProfile: false,

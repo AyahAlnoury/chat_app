@@ -1,6 +1,6 @@
 import 'package:chat_app/core/shared%20widgets/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 
 class LoginButton extends StatelessWidget {
   const LoginButton({
@@ -33,5 +33,5 @@ class LoginButton extends StatelessWidget {
 }
 
 displaytoastMssg(String msg, BuildContext context) {
-  Fluttertoast.showToast(msg: msg);
+  // Fluttertoast.showToast(msg: msg);
 }

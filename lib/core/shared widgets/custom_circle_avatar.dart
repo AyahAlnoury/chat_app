@@ -8,8 +8,10 @@ class CustomCircleAvatar extends StatelessWidget {
     required this.radius,
     required this.Pressed,
     required this.callProfile,
+    required this.top
   });
   double radius;
+  double top;
   bool callProfile;
   Function() Pressed;
   @override
@@ -24,7 +26,7 @@ class CustomCircleAvatar extends StatelessWidget {
         ),
         Positioned(
           right: 0,
-          top: 35,
+          top: top,
           child: Container(
             width: 20,
             height: 20,

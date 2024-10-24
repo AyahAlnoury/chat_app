@@ -1,4 +1,5 @@
 import 'package:chat_app/core/themes/stayles.dart';
+import 'package:chat_app/features/profile/presentation/view/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
@@ -27,11 +28,20 @@ class CustomAppBar extends StatelessWidget {
             iconSize: 24,
             icon: const Icon(Ionicons.search_outline),
           ),
-          IconButton(
-            onPressed: () {},
-            iconSize: 24,
-            icon: const Icon(Ionicons.ellipsis_vertical),
-          ),
+          PopupMenuButton(
+              iconSize: 30,
+              itemBuilder: (context) => [
+                    PopupMenuItem(
+                      child: Text("Profile"),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ProfileView()));
+                      },
+                    ),
+                    PopupMenuItem(child: Text("Settings"))
+                  ]),
         ],
       ),
     );

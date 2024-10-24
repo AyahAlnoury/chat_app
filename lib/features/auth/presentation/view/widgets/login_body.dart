@@ -4,6 +4,7 @@ import 'package:chat_app/features/auth/presentation/view/widgets/login_title.dar
 import 'package:chat_app/features/auth/presentation/view/widgets/logo_widget.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/password_field.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/register_row.dart';
+import 'package:chat_app/features/home/presentation/view/home_view.dart';
 import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -65,7 +66,7 @@ class _LoginBodyState extends State<LoginBody> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => const SplashPage())));
+                          builder: ((context) => const HomeView())));
                 },
               ),
               const SizedBox(
