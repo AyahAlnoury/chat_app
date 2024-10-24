@@ -8,7 +8,7 @@ import 'package:chat_app/features/auth/presentation/view/widgets/password_field.
 import 'package:chat_app/features/auth/presentation/view/widgets/phone_field.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/register_row.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/signup_button.dart';
-import 'package:chat_app/features/home/presentation/view/home_view.dart';
+import 'package:chat_app/features/home/bottomNavigationBar/presentation/view/home_view.dart';
 import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
 

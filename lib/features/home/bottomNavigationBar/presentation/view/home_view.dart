@@ -1,5 +1,5 @@
 import 'package:chat_app/core/themes/colors.dart';
-import 'package:chat_app/features/chat/presentation/view/chat_view.dart';
+import 'package:chat_app/features/home/chat/presentation/view/chat_view.dart';
 import 'package:chat_app/features/status/presentation/view/status_view.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';

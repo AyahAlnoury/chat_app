@@ -1,5 +1,5 @@
-import 'package:chat_app/features/chat/presentation/view/chat_view.dart';
-import 'package:chat_app/features/home/presentation/view/home_view.dart';
+import 'package:chat_app/features/home/chat/presentation/view/chat_view.dart';
+import 'package:chat_app/features/home/bottomNavigationBar/presentation/view/home_view.dart';
 import 'package:chat_app/features/profile/presentation/view/profile_view.dart';
 import 'package:chat_app/features/splash/presentation/view/splash_view.dart';
 import 'package:chat_app/features/status/presentation/view/status_view.dart';

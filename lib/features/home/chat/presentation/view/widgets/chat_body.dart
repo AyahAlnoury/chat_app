@@ -1,5 +1,5 @@
 import 'package:chat_app/core/shared%20widgets/custom_appbar.dart';
-import 'package:chat_app/features/chat/presentation/view/widgets/chat_list.dart';
+import 'package:chat_app/features/home/chat/presentation/view/widgets/chat_list.dart';
 import 'package:flutter/material.dart';
 
 class ChatBody extends StatelessWidget {

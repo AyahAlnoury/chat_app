@@ -1,5 +1,5 @@
-import 'package:chat_app/features/chat/presentation/view/widgets/chat_body.dart';
-import 'package:chat_app/features/chat/presentation/view/widgets/floating_button.dart';
+import 'package:chat_app/features/home/chat/presentation/view/widgets/chat_body.dart';
+import 'package:chat_app/features/home/chat/presentation/view/widgets/floating_button.dart';
 import 'package:flutter/material.dart';
 
 class ChatView extends StatelessWidget {

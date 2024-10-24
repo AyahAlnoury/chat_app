@@ -1,6 +1,6 @@
 import 'package:chat_app/core/constants/assets_images_constants.dart';
 import 'package:chat_app/core/themes/colors.dart';
-import 'package:chat_app/features/chat/data/model/chat_details.dart';
+import 'package:chat_app/features/home/chat/data/model/chat_details.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
